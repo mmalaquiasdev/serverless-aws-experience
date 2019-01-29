@@ -1,0 +1,9 @@
+{
+  "name": "serverless-aws-tracing",
+  "version": "1.0.0",
+  "description": "Sample project importing some CloudFormation config from a separate file.",
+  "devDependencies": {
+    "serverless-plugin-tracing": "^2.0.0",
+    "serverless-plugin-stage-variables": "^1.8.2"
+  }
+}

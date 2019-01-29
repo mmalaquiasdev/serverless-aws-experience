@@ -1,0 +1,36 @@
+service: serverless-aws-tracing
+
+plugins:
+  - serverless-plugin-stage-variables
+  - serverless-plugin-tracing
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-east-1
+  tracing: true
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - lambda:*
+        - cloudwatch:*
+        - logs:*
+        - xray:*
+      Resource: "*"
+
+functions:
+  hello:
+    name: ${self:service}_hello
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
+          cors: ${self:custom.config.cors}
+
+custom:
+  stage: "${opt:stage, self:provider.stage}"
+  config: ${file(./config/config.${self:custom.stage}.js):cloudFormation}
+
+resources: ${self:custom.config.resources}
