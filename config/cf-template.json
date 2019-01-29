@@ -47,7 +47,7 @@
           },
           "ResponseType": "DEFAULT_4XX",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_4XX-generic\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_4XX-generic\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -59,7 +59,7 @@
           },
           "ResponseType": "DEFAULT_5XX",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_5XX-generic\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_5XX-generic\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -71,7 +71,7 @@
           },
           "ResponseType": "ACCESS_DENIED",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_403-access-denied\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_403-access-denied\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -83,7 +83,7 @@
           },
           "ResponseType": "API_CONFIGURATION_ERROR",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_500-api-configuration-error\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_500-api-configuration-error\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -95,7 +95,7 @@
           },
           "ResponseType": "AUTHORIZER_CONFIGURATION_ERROR",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_500-authorizer-configuration-error\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_500-authorizer-configuration-error\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -107,7 +107,7 @@
           },
           "ResponseType": "AUTHORIZER_FAILURE",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_500-authorizer-failure\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_500-authorizer-failure\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -119,7 +119,7 @@
           },
           "ResponseType": "BAD_REQUEST_BODY",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_400-bad-request-body\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_400-bad-request-body\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -131,7 +131,7 @@
           },
           "ResponseType": "BAD_REQUEST_PARAMETERS",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_400-bad-request-parameters\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_400-bad-request-parameters\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -143,7 +143,7 @@
           },
           "ResponseType": "EXPIRED_TOKEN",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_403-expired-token\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_403-expired-token\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -155,7 +155,7 @@
           },
           "ResponseType": "INTEGRATION_FAILURE",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_504-integration-failure\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_504-integration-failure\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -167,7 +167,7 @@
           },
           "ResponseType": "INTEGRATION_TIMEOUT",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_504-integration-timeout\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_504-integration-timeout\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -179,7 +179,7 @@
           },
           "ResponseType": "INVALID_API_KEY",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_403-invalid-api-key\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_403-invalid-api-key\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -191,7 +191,7 @@
           },
           "ResponseType": "INVALID_SIGNATURE",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_403-invalid-signature\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_403-invalid-signature\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -203,7 +203,7 @@
           },
           "ResponseType": "MISSING_AUTHENTICATION_TOKEN",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_403-missing-authentication-token\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_403-missing-authentication-token\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -215,7 +215,7 @@
           },
           "ResponseType": "QUOTA_EXCEEDED",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_429-quota-exceeded\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_429-quota-exceeded\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -227,7 +227,7 @@
           },
           "ResponseType": "REQUEST_TOO_LARGE",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_413-request-too-large\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_413-request-too-large\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -239,7 +239,7 @@
           },
           "ResponseType": "RESOURCE_NOT_FOUND",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_404-resource-not-found\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_404-resource-not-found\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -251,7 +251,7 @@
           },
           "ResponseType": "THROTTLED",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_429-throttled\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_429-throttled\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -263,7 +263,7 @@
           },
           "ResponseType": "UNAUTHORIZED",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_401-unauthorized\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_401-unauthorized\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       },
@@ -275,7 +275,7 @@
           },
           "ResponseType": "UNSUPPORTED_MEDIA_TYPE",
           "ResponseTemplates": {
-            "application/json": "{\"error\":{\"code\":\"net-ott_415-unsupported-media-type\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
+            "application/json": "{\"error\":{\"code\":\"mendes-xp_415-unsupported-media-type\",\"message\":$context.error.messageString},\"requestId\":\"$context.requestId\"}"
           }
         }
       }
